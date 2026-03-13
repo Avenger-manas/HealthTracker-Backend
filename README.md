@@ -1,55 +1,110 @@
 🌟 Hemophilia Care Connect Platform
+
 Connecting Patients, NGOs & Hospitals — Faster. Smarter. Together.
 
-Patient • Communicate • Your City NGO & Hospital
-— neon animated
-Animated visuals below show donation, vaccine and care flows.
 
-Get Started — Patient
-Partner Hospitals
-City Hospital
-Animated demo: vaccine · blood · hospital · NGO · instrument
+🩸 What Is This?
+India's first all-in-one Hemophilia Support Platform — a digital ecosystem designed to bridge the gap between Patients, NGOs, and Hospitals on a single connected network.
+Timely access to Factor therapy can save lives. But patients often face critical delays due to lack of information. This platform exists to eliminate that delay.
 
-Why This Platform Exists
-Finding the right support at the right time is one of the biggest challenges for Hemophilia patients. Timely access to Factor therapy can save lives. But patients often face delays due to lack of information.
+🚨 Problem Statement
+#The Gap❌Patients don't know which hospital has Factor VIII or IX❌No way to find which city has active NGOs❌Cannot check if required vials are currently available❌Patients feel alone and unsupported during emergencies
 
-❌ They don’t know which hospital has Factor VIII or IX
-❌ They don’t know which city has active NGOs
-❌ They cannot check if the required vials are available
-❌ They feel alone during emergencies
-We are here to change that. Introducing India’s first all-in-one Hemophilia Support Platform, designed to bring **Patients, NGOs, and Hospitals together** on one digital network.
+✅ Solution
+A unified platform where patients, NGOs, and hospitals communicate in real time — so that no one waits for help that could have arrived sooner.
 
 🔗 Key Features
 🏥 Hospital Factor Availability
+
 Check real-time availability of Factor VIII, IX, DDAVP and more
 View hospital stock instantly
 Find hospitals by city or region
+
 🤝 Connect with NGOs
+
 Browse NGOs near your city
 Send direct messages for help
 Receive quick support from verified NGO volunteers
+
 🧮 Smart Factor Dose Calculator
-Enter your details:
-✔ Weight
-✔ Hemophilia Type (A/B)
-✔ Factor Type (VIII/IX)
-✔ Bleeding Situation (Minor / Moderate / Major)
-The system instantly tells you:
-➡ Required IU dosage
-➡ Number of vials
-➡ Recommended vial sizes (250 / 500 / 1000 IU)
+Enter your details and get an instant calculation:
+InputOptionsWeightIn kgHemophilia TypeA / BFactor TypeVIII / IXBleeding SituationMinor / Moderate / Major
+Output:
+
+Required IU dosage
+Number of vials needed
+Recommended vial sizes (250 / 500 / 1000 IU)
+
 💬 Patient Assistance & Emergency Support
+
 Share your problem directly with hospitals and NGOs
 Get guidance, availability info, and support in minutes
+
 📝 NGO Registration & Dashboard
+
 NGOs can register in one click
 Manage city-wise coverage
-Receive patient requests instantly
+Receive and respond to patient requests instantly
+
+
+🗺️ How It Works
+mermaidgraph LR
+    P[Patient] -->|Submits Request| PL[Platform]
+    PL -->|Matches by City| NGO[NGO]
+    PL -->|Checks Stock| H[Hospital]
+    NGO -->|Support & Guidance| P
+    H -->|Factor Availability| P
+    PL -->|Dose Calculation| P
+
+🛠️ Tech Stack
+LayerTechnologyFrontendReact.js / HTML5 / CSS3BackendJava 17, Spring BootDatabaseMongoDBAuthenticationJWT / OAuth2NotificationsRabbitMQ / FirebaseDevOpsDocker, GitHub Actions
+
+🚀 Getting Started
+Prerequisites
+
+Java 17
+Node.js
+MongoDB
+Docker & Docker Compose
+
+Run Locally
+bash# Clone the repository
+git clone https://github.com/your-username/hemophilia-care-connect.git
+
+# Navigate to project directory
+cd hemophilia-care-connect
+
+# Start all services
+docker-compose up --build
+
+👥 User Roles
+RoleAccessPatientSearch hospitals, contact NGOs, use dose calculatorNGORegister, manage coverage, respond to patientsHospitalUpdate factor stock, respond to queriesAdminFull platform management
+
 🌍 Our Vision
 We dream of a future where:
 
-Every Hemophilia patient receives factor on time
+Every Hemophilia patient receives factor therapy on time
 No child or patient waits for treatment
 Hospitals and NGOs work together through a connected digital ecosystem
-This platform is more than a tool — **It is a lifeline, a community, a support system.**
 
+This platform is more than a tool — it is a lifeline, a community, a support system.
+
+🤝 Contributing
+Contributions are welcome! If you want to help:
+
+Fork the repository
+Create your feature branch (git checkout -b feature/YourFeature)
+Commit your changes (git commit -m 'Add YourFeature')
+Push to the branch (git push origin feature/YourFeature)
+Open a Pull Request
+
+
+👨‍💻 Author
+Developed by: Manas
+Role: Java Developer
+Tech Focus: Spring Boot • React • Docker • MongoDB • GitHub Actions CI/CD
+
+⭐ Support
+If this project matters to you, please give it a star and share it.
+
+Together, we can use technology to make healthcare more accessible — one patient at a time. ❤️
