@@ -121,7 +121,7 @@ Tech Focus: Spring Boot Docker, MongoDB, GitHub Actions CI/CD
 ---------------------------------------------------
 
 Support
-
+---------------------------------------------------
 If this project matters to you, give it a star and share it.
 
 Together, we can use technology to make healthcare more accessible — one patient at a time.
